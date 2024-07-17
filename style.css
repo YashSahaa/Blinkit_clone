@@ -1,0 +1,152 @@
+#vertical_line{
+    height: 70px;
+    border-right: 1px solid rgb(210, 210, 210);
+}
+#search_bar{
+    border: 1px solid #eeeeee;
+    border-radius: 10px;
+    width: 40%;
+    background-color: #f8f8f8;
+    padding: 0px 10px;
+}
+#search_bar>input{
+    width: 95%;
+    border: none;
+    background-color: transparent;
+    height: 45px;
+}
+#categories{
+    width: 83%;
+    margin: auto;
+}
+.scrollable_div{
+    width: 82%;
+    margin: auto;
+    overflow: hidden;
+    
+}
+.list{
+    overflow: scroll;
+    text-wrap: nowrap;
+}
+.category_section{
+    width: 82%;
+    margin: auto;
+    margin-top: 30px;
+}
+.my_card{
+    width: 200px;
+    display: inline-block;
+}
+.timer{
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    font-size: 8px;
+    font-weight: 900;
+    width: fit-content;
+    padding: 3px;
+}
+.product_weight{
+    color: #666666;
+}
+
+footer{
+    width: 82%;
+    margin: auto;
+    margin-top: 50px;
+    padding-bottom: 20px ;
+}
+#footer_row1{
+    display: flex;
+
+}
+#table1{
+    flex: 1;
+}
+#table2{
+    flex: 2;
+}
+#footer_row2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    margin: 10px 0px;
+}
+#footer_row3{
+    color: #666666;
+    font-size: 14px;
+}
+
+#social_icons{
+    display: flex;
+}
+
+.social_icon{
+    width: 40px;
+    margin-inline: 10px;
+    height: 40px;
+    background-color: black;
+    border-radius: 50%;
+    font-size: 25px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#footer_copyright{
+    width: 32%;
+    color: #666666;
+    font-size: 12px;
+}
+#download_section{
+    width: 65%;
+}
+
+table{
+    width: 100%;
+}
+td{
+    color: #666666;
+    font-size: 14px;
+    padding-top: 5px;
+}
+
+@media screen  and (max-width:500px) {
+    nav{
+        flex-direction :column;
+    }
+    #vartical_line{
+        display: none;
+    }
+    #delivery_section{
+        text-align: center;
+    }
+    #search_bar{
+        width: 90%;
+    }
+    #search_bar>input{
+        width: 85%;
+    }
+    #hero{
+        display: none !important;
+    }
+    #footer_row1{
+        flex-direction: column;
+        gap: 10px;
+    }
+    #footer_row2{
+        flex-direction: column;
+        gap: 10px;
+    }
+    #footer_row3{
+        text-align: justify;
+    }
+    #footer_copyright{
+        width: 100%;
+    }
+    #download_section{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
